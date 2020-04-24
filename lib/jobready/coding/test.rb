@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'jobready/coding/test/version'
+require "jobready/coding/test/version"
 
 module Jobready
   module Coding

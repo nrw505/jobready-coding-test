@@ -1,23 +1,23 @@
 # frozen_string_literal: true
 
-require_relative 'lib/jobready/coding/test/version'
+require_relative "lib/jobready/coding/test/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = 'jobready-coding-test'
+  spec.name          = "jobready-coding-test"
   spec.version       = Jobready::Coding::Test::VERSION
-  spec.authors       = ['Nigel Williams']
-  spec.email         = ['nigelw@vurt.net']
+  spec.authors       = ["Nigel Williams"]
+  spec.email         = ["nigelw@vurt.net"]
 
-  spec.summary       = 'Implementation of the JobReady coding test'
-  spec.homepage      = 'https://github.com/nrw505/jobready-coding-test'
-  spec.license       = 'MIT'
-  spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
+  spec.summary       = "Implementation of the JobReady coding test"
+  spec.homepage      = "https://github.com/nrw505/jobready-coding-test"
+  spec.license       = "MIT"
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
-  spec.metadata['allowed_push_host'] = 'https://do-not-publish-this.vurt.net'
+  spec.metadata["allowed_push_host"] = "https://do-not-publish-this.vurt.net"
 
-  spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/nrw505/jobready-coding-test'
-  spec.metadata['changelog_uri'] = 'https://github.com/nrw505/jobready-coding-test/blob/master/CHANGELOG.md'
+  spec.metadata["homepage_uri"] = spec.homepage
+  spec.metadata["source_code_uri"] = "https://github.com/nrw505/jobready-coding-test"
+  spec.metadata["changelog_uri"] = "https://github.com/nrw505/jobready-coding-test/blob/master/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been
@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
       f.match(%r{^(test|spec|features)/})
     end
   end
-  spec.bindir        = 'exe'
+  spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ['lib']
+  spec.require_paths = ["lib"]
 end
