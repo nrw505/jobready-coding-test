@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "jobready/coding/test"
+
+if ARGV.count != 2
+  puts "Usage: process-basket-csv input output"
+  exit 1
+end
+
+input = $stdin
+if ARGV[0] != "-"
+  input = open(ARGV[0], "r")
+end
+
+output = $stdout
+if ARGV[1] != "-"
+  output = open(ARGV[1], "w")
+end
+
+basket = Jobready::Coding::Test::Basket.new(input)
+receipt = Jobready::Coding::Test::Receipt.new(basket)
+
+tax_calculator = Jobready::Coding::Test::TaxCalculator.new
+receipt.calculate!(tax_calculator)
+receipt.write(output)
+
+exit 0

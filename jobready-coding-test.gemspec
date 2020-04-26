@@ -31,5 +31,6 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.executables   << "process-basket-csv"
   spec.add_dependency "ruby-stemmer", "~> 2.0.1"
 end
