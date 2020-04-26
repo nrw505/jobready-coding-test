@@ -10,5 +10,9 @@ gem "rspec", "~> 3.0"
 gem "rubocop-github", require: false
 
 # rubocop-github does not work with rubocop 0.76 or later,
-# but rubocop-github does not reflect that in their gemspec
+# but rubocop-github does not reflect that in their gemspec,
+# so we add a constraint on it here.
 gem "rubocop", "< 0.76", require: false
+
+# For better debugging
+gem "pry"
