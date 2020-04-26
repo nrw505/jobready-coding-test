@@ -2,6 +2,16 @@
 
 This is my submission for the JobReady coding test.
 
+One thing to note:
+
+This does not pass the examples as given. The examples as given
+require an input of "music cd" to produce an output of "music CD" and
+an input of "box of imported chocolates" to produce an output of
+"imported box of chocolates". I have assumed for now that rewriting of
+line item descriptions is not intended - if that assumption is
+incorrect then let's talk more about the rules for that rewriting: I
+think that's a bigger problem that needs more specification around it.
+
 ## Installation
 
 You probably don't want to actually install this. But if you do, add this line to your application's Gemfile:
@@ -20,7 +30,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Once installed, you will have a program `process-basket-csv` which
+takes two arguments: input and output. These can either be filenames
+or `-` which will read or write to standard I/O.
 
 ## Development
 
